@@ -429,6 +429,9 @@ section {
 }
 
 .contentGrid p {
+  background: rgba(248, 248, 248, 0.15);
+  border-radius: 20px;
+  padding: clamp(1.4rem, 2vw, 3rem);
   width: clamp(0px, 40%, 75ch);
 }
 
