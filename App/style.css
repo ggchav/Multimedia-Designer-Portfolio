@@ -304,7 +304,7 @@ main img {
 @keyframes beachZoom {
   to {
     max-height: 100vh;
-    width: clamp(1000px, 100vw, 100%);
+    width: clamp(1000px, 100vw, 1920px);
   }
 }
 
@@ -320,7 +320,7 @@ main img {
   opacity: 0;
   padding: 40px 0 40px clamp(20px, 10vw, 200px);
   transform: scaleY(0);
-  width: clamp(0px, 100vw, 100%);
+  width: clamp(0px, 100vw, 1920px);
   z-index: 3;
 }
 
@@ -439,6 +439,7 @@ video,
 .youtube {
   border-radius: 20px;
   filter: drop-shadow(0px 0px 5px rgba(33, 33, 33, 0.5));
+  position: relative;
   width: 56%;
   z-index: 2;
 }
