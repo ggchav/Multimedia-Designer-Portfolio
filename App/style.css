@@ -20,7 +20,7 @@ html {
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1 {
@@ -206,6 +206,7 @@ main {
   display: flex;
   height: clamp(0px, 200vh, 3500px);
   justify-content: center;
+  width: 100vw;
 }
 
 @keyframes mainZoom {
