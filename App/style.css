@@ -203,7 +203,9 @@ main {
   animation-play-state: paused;
   background: var(--wite);
   color: var(--blak);
+  display: flex;
   height: clamp(0px, 200vh, 3500px);
+  justify-content: center;
 }
 
 @keyframes mainZoom {
