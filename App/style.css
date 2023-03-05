@@ -216,19 +216,17 @@ main {
 }
 
 .arrows {
-  bottom: 40px;
-  height: 74px;
+  bottom: 30px;
+  height: 51px;
   left: 50%;
-  margin-left: -30px;
+  margin-left: -23px;
   position: absolute;
-  width: 60px;
+  width: 51px;
 }
 
 .arrows path {
-  animation: arrow 3s infinite;
-  fill: transparent;
-  stroke: var(--blak);
-  stroke-width: 3px;
+  animation: arrow 2.5s infinite;
+  fill: var(--blak);
 }
 
 @keyframes arrow {
@@ -236,7 +234,7 @@ main {
     opacity: 0
   }
 
-  40% {
+  50% {
     opacity: 1
   }
 
@@ -250,11 +248,7 @@ main {
 }
 
 .arrows path.a1 {
-  animation-delay: -1s;
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
+  animation-delay: -.5s;
 }
 
 .mainContainer {
@@ -264,6 +258,7 @@ main {
   justify-content: center;
   position: sticky;
   top: 0;
+  transform: translateZ(0);
   width: clamp(0px, 100vw, 1920px);
   z-index: 2;
 }
@@ -354,13 +349,15 @@ main img {
   animation-name: meZoom;
   animation-play-state: paused;
   filter: brightness(0%);
-  height: clamp(500px, 70vw, 60vh);
+  -webkit-filter: brightness(0%);
+  height: clamp(300px, 70vw, 60vh);
   z-index: 4;
 }
 
 @keyframes meZoom {
   to {
     filter: brightness(100%);
+    -webkit-filter: brightness(100%);
     -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
     height: clamp(500px, 50vw, 80vh);
     transform: translate(clamp(100px, 25vw, 400px), 25px);
@@ -405,6 +402,7 @@ section {
   pointer-events: none;
   position: sticky;
   top: 0;
+  transform: translateZ(0);
   z-index: 1;
 }
 
@@ -572,8 +570,9 @@ footer a {
   @keyframes meZoom {
     to {
       filter: brightness(100%);
+      -webkit-filter: brightness(100%);
       -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
-      height: 50vh;
+      height: 80vh;
       transform: translate(0px);
     }
   }
