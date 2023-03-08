@@ -1,5 +1,4 @@
 if (!(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream)) {
-    console.log("asjdklfgwahefgaoiewrghaoew;rgarsdg");
     //
     // SmoothScroll for websites v1.4.10 (Balazs Galambosi)
     // http://www.smoothscroll.net/

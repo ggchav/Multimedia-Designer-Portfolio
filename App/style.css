@@ -537,7 +537,7 @@ footer a {
     height: 100vh;
     justify-content: center;
     left: -15vw;
-    padding: 12vh 0 0 0;
+    padding: clamp(100px, 10vh, 10vh) 0 0 0;
     position: absolute;
     top: 0px;
     width: 15vw;
